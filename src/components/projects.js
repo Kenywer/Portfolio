@@ -33,8 +33,8 @@ function Projects() {
     {
       title: 'Portfolio Personal',
       description: 'Desarrollé un portfolio personal para mostrar mis proyectos y habilidades en el desarrollo web.',
-      link: 'https://miportfolio.com',
-      github: 'https://github.com/tuusuario/portfolio',
+      link: 'https://miportafolio-6d6c6.web.app/',
+      github: 'https://github.com/Kenywer/Portfolio',
       image: portafolio,  // Usa las rutas de imágenes o importarlas
       technologies: [
         { name: 'React', image: reactImage },
@@ -43,7 +43,7 @@ function Projects() {
         { name: 'CSS', image: cssImage },
       ],
     },
-    {
+    /*{
       title: 'Banquetería Teresa Orrego',
       description: 'Creé la página web para Banquetería Teresa Orrego, facilitando la información de los servicios de banquetería y contacto para los clientes.',
       link: 'https://banqueteriateresaorrego.cl',
@@ -54,7 +54,7 @@ function Projects() {
         { name: 'CSS', image: cssImage },
         { name: 'JavaScript', image: javascriptImage },
       ],
-    },
+    },*/
   ];
 
   return (
