@@ -6,8 +6,8 @@ function Experiences() {
     {
       title: 'Alfaro Repuestos',
       role: 'Desarrollador Web (6 meses)',
-      description: `Durante mi tiempo en Alfaro Repuestos, trabajé en el diseño y desarrollo de su página web. 
-      Implementé funcionalidades clave, optimicé la experiencia del usuario y mejoré la eficiencia en los procesos de compra en línea.`,
+      description: `En Alfaro Repuestos diseñé y desarrollé su página web, implementando mejoras que optimizaron la experiencia del usuario y los procesos de compra en línea. 
+      Como resultado, se logró un aumento significativo en las ventas y un mayor alcance a nuevos públicos, mejorando la presencia digital de la empresa.`,
     },
     // Puedes agregar más objetos de experiencia en el futuro
     // {
