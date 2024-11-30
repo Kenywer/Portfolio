@@ -17,6 +17,40 @@ function Header() {
 
   return (
     <header className="relative flex flex-col items-center text-center p-6 rounded-lg mx-auto max-w-md">
+      {/* Menú de navegación en modo PC */}
+      <nav className="hidden sm:flex space-x-4 mb-6">
+        <a
+          href="#about"
+          className="text-white font-semibold hover:bg-indigo-600 py-2 px-4 rounded-md"
+        >
+          Tecnologías
+        </a>
+        <a
+          href="#experiences"
+          className="text-white font-semibold hover:bg-indigo-600 py-2 px-4 rounded-md"
+        >
+          Experiencias
+        </a>
+        <a
+          href="#projects"
+          className="text-white font-semibold hover:bg-indigo-600 py-2 px-4 rounded-md"
+        >
+          Proyectos
+        </a>
+        <a
+          href="#formation"
+          className="text-white font-semibold hover:bg-indigo-600 py-2 px-4 rounded-md"
+        >
+          Formación
+        </a>
+        <a
+          href="#contact"
+          className="text-white font-semibold hover:bg-indigo-600 py-2 px-4 rounded-md"
+        >
+          Contáctame
+        </a>
+      </nav>
+
       {/* Botón móvil */}
       <div className="sm:hidden flex justify-between w-full mb-6">
         <button
@@ -56,11 +90,11 @@ function Header() {
         ></div>
       )}
 
-      {/* Menú lateral deslizable */}
+      {/* Menú lateral deslizable con animación */}
       <nav
         className={`fixed top-0 left-0 h-full bg-gray-900 z-50 transform ${
           menuOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 w-64 flex flex-col p-6 sm:hidden`}
+        } transition-transform duration-500 ease-in-out w-64 flex flex-col p-6 sm:hidden`}
       >
         <button
           className="self-end text-white mb-6"
@@ -153,13 +187,13 @@ function Header() {
 
       {/* Botón de "Ir arriba" */}
       <div className="fixed bottom-4 right-4 z-50">
-      <button
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="bg-gray-500 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition-all"
-      >
-        ↑
-      </button>
-    </div>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="bg-gray-500 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition-all"
+        >
+          ↑
+        </button>
+      </div>
     </header>
   );
 }
